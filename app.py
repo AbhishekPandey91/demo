@@ -92,7 +92,5 @@ def create_invoice():
             f.write("Invoice data")
     return "Invoice created"
 if __name__ == '__main__':
-    # VULNERABILITY 16: Running in debug mode
-    # VULNERABILITY 17: Binding to all interfaces (0.0.0.0)
-
     app.run(debug=True, host='0.0.0.0', port=5000)
+
